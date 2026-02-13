@@ -18,6 +18,14 @@ FullStack is a Discourse theme for the FullStack Ag community. It is based on th
 
 There is no local build step — Discourse compiles the theme. System tests in `spec/` run via Discourse's CI workflow.
 
+## Testing with Theme Creator
+
+Use [discourse.theme-creator.io](https://discourse.theme-creator.io/) to preview the theme in a live Discourse sandbox (no local Discourse install needed).
+
+1. Log in with a Discourse Meta account, go to **My Themes** > **Install** > **From a git repository**, and enter this repo's URL.
+2. For live local development, install the [Theme CLI](https://github.com/discourse/discourse_theme) (`gem install discourse_theme`) and run `discourse_theme watch .` from the repo root.
+3. When prompted, use root URL `https://discourse.theme-creator.io` and an API key from the theme's **Advanced** settings on Theme Creator.
+
 ## Architecture
 
 ### Discourse Theme Structure
