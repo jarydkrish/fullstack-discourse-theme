@@ -1,0 +1,37 @@
+// Badge display
+.badge-card {
+  border: 1px solid var(--fullstack-border);
+  border-radius: 16px;
+  box-shadow: var(--fullstack-shadow-sm);
+  transition: all $transition-base;
+
+  &:hover {
+    box-shadow: var(--fullstack-shadow-md);
+    transform: translateY(-1px);
+  }
+
+  .badge-contents {
+    .badge-info {
+      .badge-name {
+        font-family: var(--heading-font-family);
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// Pill-shaped badge indicators
+.user-badge {
+  border-radius: 9999px;
+  font-weight: 500;
+}
+
+// Badge page grid
+.badges-listing {
+  .badge-groups {
+    h3 {
+      font-family: var(--heading-font-family);
+      font-weight: 700;
+    }
+  }
+}

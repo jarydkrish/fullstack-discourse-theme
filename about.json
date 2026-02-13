@@ -17,16 +17,34 @@
     "jetbrains-mono-regular": "assets/JetBrainsMono-Regular.woff2",
     "jetbrains-mono-medium": "assets/JetBrainsMono-Medium.woff2"
   },
-  "modifiers": {},
+  "modifiers": {
+    "svg_icons": [
+      "fire",
+      "far-square-check",
+      "far-square",
+      "thumbtack",
+      "reply",
+      "heart",
+      "user-plus"
+    ],
+    "serialize_topic_is_hot": true,
+    "serialize_topic_excerpts": {
+      "type": "setting",
+      "value": "topic_card_high_context"
+    }
+  },
   "color_schemes": {
     "FullStack Light": {
       "primary": "2d2725",
       "secondary": "f2ecde",
       "tertiary": "d4622b",
+      "tertiary-med-or-tertiary": "d4622b",
       "quaternary": "5f7e3f",
       "header_background": "f2ecde",
       "header_primary": "2d2725",
       "highlight": "f0ddd0",
+      "selected": "f0ddd0",
+      "hover": "ede8dc",
       "danger": "b74136",
       "success": "5f7e3f",
       "love": "d4622b"
@@ -35,13 +53,20 @@
       "primary": "f2ecde",
       "secondary": "2d2725",
       "tertiary": "e07d4a",
+      "tertiary-med-or-tertiary": "e07d4a",
       "quaternary": "7a9e5a",
       "header_background": "1e1b19",
       "header_primary": "f2ecde",
       "highlight": "5a3a1e",
+      "selected": "3a3020",
+      "hover": "332f2c",
       "danger": "d05454",
       "success": "7a9e5a",
       "love": "e07d4a"
     }
+  },
+  "theme_site_settings": {
+    "enable_welcome_banner": true,
+    "search_experience": "search_field"
   }
 }

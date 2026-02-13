@@ -1,0 +1,37 @@
+// User card popup
+.user-card,
+#user-card {
+  border-radius: 16px;
+  border: 1px solid var(--fullstack-border);
+  box-shadow: var(--fullstack-shadow-lg);
+
+  .card-content {
+    font-family: var(--font-family);
+  }
+
+  .names {
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+  }
+
+  .btn {
+    border-radius: 8px;
+  }
+
+  .metadata {
+    color: var(--fullstack-charcoal-500);
+  }
+}
+
+// Group card popup
+.group-card,
+#group-card {
+  border-radius: 16px;
+  border: 1px solid var(--fullstack-border);
+  box-shadow: var(--fullstack-shadow-lg);
+
+  .group-card-name {
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+  }
+}

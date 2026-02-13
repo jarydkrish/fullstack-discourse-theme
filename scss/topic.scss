@@ -1,0 +1,286 @@
+@use "lib/viewport";
+
+:root {
+  --d-post-control-background--hover: var(--d-hover);
+}
+
+.post-stream {
+  .contents {
+    font-size: var(--font-up-1);
+    line-height: 1.25;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.timeline-container .topic-timeline {
+  min-width: unset;
+
+  .timeline-scrollarea {
+    border-left: 1px solid var(--accent-color);
+
+    .timeline-scroller {
+      @include viewport.from(lg) {
+        margin-left: -4.5px;
+        background: var(--d-content-background);
+        height: 40px !important; // height is coming from element style have no other choice
+      }
+
+      .timeline-replies,
+      .timeline-ago {
+        line-height: 1;
+      }
+    }
+
+    .timeline-handle {
+      background-color: var(--accent-color);
+
+      @include viewport.from(lg) {
+        width: 8px;
+        border-radius: 10px;
+        height: calc(100% - 6px);
+      }
+    }
+  }
+}
+
+// should probably get rid of this extra specificity class in core?
+.timeline-container.timeline-fullscreen {
+  @include viewport.until(lg) {
+    .topic-timeline
+      .timeline-scrollarea
+      .timeline-scroller
+      .timeline-scroller-content {
+      padding-right: 0.5em;
+    }
+  }
+}
+
+body:not(.d-toc-installed) {
+  .container.posts {
+    grid-template-columns: auto 8em;
+
+    @media screen and (width <= 924px) {
+      grid-template-columns: auto;
+    }
+  }
+
+  .topic-navigation-popup {
+    min-width: 250px;
+    right: 0;
+  }
+}
+
+.container.posts {
+  .post-notice {
+    padding: var(--space-2);
+    border-radius: var(--d-border-radius);
+    font-size: var(--font-down-1-rem);
+
+    .d-icon {
+      font-size: var(--font-up-1);
+      width: 1em;
+    }
+  }
+}
+
+.topic-post-badges {
+  .badge-notification {
+    font-size: var(--font-down-1);
+    padding: 0.15em 0.35em;
+    border-radius: 1em;
+    min-width: 1.3em;
+    box-sizing: border-box;
+    color: var(--secondary);
+  }
+}
+
+.timeline-container .topic-timeline .timeline-scroller-content {
+  overflow: unset;
+}
+
+.more-topics__container
+  .more-topics__list
+  .topic-list-body
+  .topic-list-item:last-of-type {
+  border-bottom: 1px solid var(--primary-300);
+}
+
+.discourse-post-event .discourse-post-event-widget {
+  background: var(--d-content-background);
+}
+
+.more-topics__container .nav {
+  position: unset;
+  margin-block: unset;
+  margin-bottom: 1em;
+}
+
+nav.post-controls .actions button {
+  font-size: var(--font-0);
+}
+
+.archetype-private_message {
+  --pm-border-radius: var(--d-border-radius);
+}
+
+// FullStack .cooked content styling
+.cooked {
+  line-height: 1.75;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--heading-font-family);
+  }
+
+  // Blockquotes - sage border, cream bg
+  blockquote {
+    border-left: 4px solid var(--fullstack-sage);
+    background: var(--fullstack-cream-200);
+    padding: 1rem 1.5rem;
+    border-radius: 0 12px 12px 0;
+    color: var(--fullstack-charcoal-700);
+    font-style: italic;
+  }
+
+  // Inline code - burnt-orange text, cream bg
+  code {
+    background: var(--fullstack-cream-200);
+    color: var(--fullstack-burnt-orange);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  // Code blocks - charcoal bg
+  pre {
+    background: var(--fullstack-charcoal-900);
+    color: var(--fullstack-cream-100);
+    padding: 1.25rem;
+    border-radius: 12px;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.6;
+
+    code {
+      background: transparent;
+      color: inherit;
+      padding: 0;
+      font-size: inherit;
+    }
+  }
+
+  // Links in posts
+  a {
+    color: var(--fullstack-burnt-orange);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: var(--fullstack-burnt-orange-dark);
+    }
+  }
+
+  // Tables
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th {
+      background: var(--fullstack-cream-200);
+      font-weight: 600;
+      font-family: var(--font-family);
+    }
+
+    th,
+    td {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid var(--fullstack-border);
+    }
+
+    tr:hover td {
+      background: var(--fullstack-cream-200);
+    }
+  }
+
+  // Images in posts
+  img:not(.emoji, .avatar) {
+    border-radius: 12px;
+  }
+
+  // Horizontal rules
+  hr {
+    border: none;
+    border-top: 1px solid var(--fullstack-border);
+    margin: 1.5rem 0;
+  }
+}
+
+// Post stream
+.topic-post {
+  border-bottom: 1px solid var(--fullstack-border);
+
+  .post-info {
+    .topic-meta-data {
+      .names {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// Post controls
+.post-controls {
+  .actions {
+    .btn {
+      border-radius: 8px;
+
+      &:hover {
+        background: var(--fullstack-cream-200);
+      }
+    }
+  }
+}
+
+// Suggested topics
+.suggested-topics {
+  .topic-list .main-link a.title {
+    font-weight: 600;
+  }
+}
+
+// Quotes
+aside.quote {
+  border: 1px solid var(--fullstack-border);
+  border-radius: 8px;
+  overflow: hidden;
+
+  .title {
+    border-bottom: 1px solid var(--fullstack-border);
+    background: var(--fullstack-cream-200);
+    font-weight: 600;
+  }
+
+  blockquote {
+    border-left: none;
+    border-radius: 0;
+    background: transparent;
+    font-style: normal;
+  }
+}
+
+// Onebox (link previews)
+aside.onebox {
+  border: 1px solid var(--fullstack-border);
+  border-radius: 8px;
+  overflow: hidden;
+
+  .onebox-body {
+    .onebox-metadata {
+      color: var(--fullstack-charcoal-500);
+    }
+  }
+}

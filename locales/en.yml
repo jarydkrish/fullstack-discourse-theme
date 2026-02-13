@@ -1,5 +1,20 @@
 en:
+  solved: "Solved"
+  unsolved: "Unsolved"
+  posted: "posted"
+  by_username: "by @%{username}"
+  replied: "replied"
+  vote_count:
+    one: "%{count} vote"
+    other: "%{count} votes"
+  like_count:
+    one: "%{count} like"
+    other: "%{count} likes"
+  reply_count:
+    one: "%{count} reply"
+    other: "%{count} replies"
   theme_metadata:
-    description: The branded theme for the FullStack Ag community — warm, agricultural-inspired design with cream backgrounds, charcoal text, and burnt-orange accents.
+    description: "The branded theme for the FullStack Ag community — warm, agricultural-inspired design with card-based topic lists and full-width layout."
     settings:
-      fullstack_branding: Enable or disable FullStack branded styling (custom fonts, colors, and layout adjustments)
+      topic_card_high_context:
+        description: "When enabled, displays additional context on topic cards including tags, excerpts, solved status, assigned users, and vote counts"

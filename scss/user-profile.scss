@@ -1,0 +1,65 @@
+// User profile page
+.user-main {
+  .about {
+    .details {
+      border: 1px solid var(--fullstack-border);
+      border-radius: 16px;
+      box-shadow: var(--fullstack-shadow-sm);
+
+      .primary {
+        h2 {
+          font-family: var(--heading-font-family);
+          font-weight: 700;
+        }
+
+        .bio {
+          color: var(--fullstack-charcoal-700);
+          line-height: 1.65;
+        }
+      }
+
+      .secondary {
+        dt {
+          color: var(--fullstack-charcoal-500);
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 0.75em;
+          letter-spacing: 0.03em;
+        }
+      }
+    }
+
+    .staff-counters {
+      border-radius: 8px;
+
+      > div {
+        border-radius: 8px;
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// User preferences
+.user-preferences {
+  .control-group {
+    label {
+      font-weight: 500;
+    }
+  }
+}
+
+// User activity stream
+.user-stream {
+  .item {
+    border-bottom: 1px solid var(--fullstack-border);
+    transition: background $transition-fast;
+
+    &:hover {
+      background: var(--fullstack-cream-200);
+    }
+  }
+}

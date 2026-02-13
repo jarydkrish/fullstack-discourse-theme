@@ -1,0 +1,81 @@
+// Smooth transitions for interactive elements
+.btn,
+.nav-pills > li > a,
+.d-header-icons .icon,
+.sidebar-section-link,
+.select-kit .select-kit-header,
+input,
+textarea,
+select {
+  transition: all $transition-base;
+}
+
+// Focus ring utility
+%focus-ring {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(212, 98, 43, 0.15);
+  border-color: var(--fullstack-burnt-orange);
+}
+
+html {
+  font-family: var(--font-family);
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings use Manrope
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.d-header .title a,
+.category-name,
+.topic-list .main-link a.title {
+  font-family: var(--heading-font-family);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+// Links
+a {
+  color: var(--fullstack-burnt-orange);
+  transition: color $transition-fast;
+
+  &:hover {
+    color: var(--fullstack-burnt-orange-dark);
+  }
+}
+
+// Code
+code,
+pre code,
+.d-editor-preview code {
+  font-family: var(--d-font-family--monospace);
+}
+
+// Selection
+::selection {
+  background: var(--fullstack-burnt-orange-light);
+  color: var(--fullstack-charcoal-900);
+}

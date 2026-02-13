@@ -1,49 +1,162 @@
-// FullStack Color Definitions
-// Custom CSS properties that auto-adapt to light/dark mode via dark-light-choose()
-:root {
-  // Brand colors
-  --fullstack-burnt-orange: #{dark-light-choose(#d4622b, #e07d4a)};
-  --fullstack-burnt-orange-dark: #{dark-light-choose(#b8531f, #d4622b)};
-  --fullstack-burnt-orange-light: #{dark-light-choose(#f0ddd0, #5a3a1e)};
+html {
+  --accent-color: #{$tertiary} !important;
+  --accent-text-color: #fff;
 
-  // Cream palette
-  --fullstack-cream-100: #{dark-light-choose(#f2ecde, #2d2725)};
-  --fullstack-cream-200: #{dark-light-choose(#ede8dc, #332f2c)};
-  --fullstack-cream-300: #{dark-light-choose(#e5dfd3, #3a3533)};
+  // Background Colors
+  --background-color: light-dark(
+    oklch(from #{$tertiary} 94% calc(c * 0.125) h),
+    oklch(from #{$tertiary} 12% 0.02 h)
+  ) !important;
+  --d-content-background: light-dark(
+    oklch(from #{$secondary} calc(2 * l) c h),
+    oklch(from #{$secondary} l c h)
+  ) !important;
 
-  // Charcoal palette
-  --fullstack-charcoal-900: #{dark-light-choose(#2d2725, #f2ecde)};
-  --fullstack-charcoal-700: #{dark-light-choose(#3d3935, #ddd7c9)};
-  --fullstack-charcoal-500: #{dark-light-choose(#6b6460, #a39d95)};
-  --fullstack-charcoal-300: #{dark-light-choose(#9e9790, #6b6460)};
+  // Header Colors
+  --header_primary-low-mid: light-dark(
+    oklch(from #{$tertiary} 73.5% calc(c * 0.5) h),
+    oklch(from #{$tertiary} l calc(c * 0.25) h)
+  ) !important;
+  --header_primary-medium: light-dark(
+    oklch(from #{$tertiary} 54% calc(c * 0.5) h),
+    oklch(from #{$tertiary} calc(l * 1.35) calc(c * 0.25) h)
+  ) !important;
 
-  // Sage / green
-  --fullstack-sage: #{dark-light-choose(#5f7e3f, #7a9e5a)};
-  --fullstack-sage-light: #{dark-light-choose(#e8eddf, #3a4530)};
+  // Sidebar Colors
+  --d-sidebar-border-color: light-dark(
+    oklch(from #{$tertiary} 88% calc(c * 0.25) h),
+    oklch(from #{$tertiary} calc(l * 0.7) calc(c * 0.25) h)
+  ) !important;
+  --d-sidebar-link-color: light-dark(
+    oklch(from #{$tertiary} calc(l * 0.8) calc(c * 0.25) h),
+    oklch(from #{$tertiary} calc(l * 1.5) calc(c * 0.25) h)
+  ) !important;
+  --d-sidebar-active-color: #{$primary} !important;
+  --d-sidebar-suffix-color: light-dark(
+    oklch(from #{$tertiary} l calc(c * 0.9) h),
+    oklch(from #{$tertiary} l calc(c * 0.9) h)
+  ) !important;
 
-  // Chocolate
-  --fullstack-chocolate: #{dark-light-choose(#3d2e1e, #e8ddd0)};
+  // Other Colors
+  --d-selected: light-dark(
+    oklch(from #{$tertiary} 92% calc(c * 0.5) h),
+    oklch(from #{$tertiary} calc(l * 0.7) calc(c * 0.25) h)
+  ) !important;
+  --d-nav-color--active: light-dark(
+    oklch(from #{$tertiary} l c h),
+    oklch(from #{$tertiary} calc(l * 1.2) c h)
+  ) !important;
+  --d-nav-color--hover: light-dark(
+    oklch(from #{$tertiary} l c h),
+    oklch(from #{$tertiary} calc(l * 1.2) c h)
+  ) !important;
+  --link-color: light-dark(
+    oklch(from #{$tertiary} l c h),
+    oklch(from #{$tertiary} calc(l * 0.95) c h)
+  ) !important;
+  --link-color-hover: light-dark(
+    oklch(from #{$tertiary} l c h),
+    oklch(from #{$tertiary} calc(l * 1.5) calc(c * 2.25) h)
+  ) !important;
+  --tertiary-hover: #{$tertiary} !important;
 
-  // Borders
-  --fullstack-border: #{dark-light-choose(#e5dfd3, #3a3533)};
-  --fullstack-border-strong: #{dark-light-choose(#d5cfc3, #4a4543)};
+  // Search Colors
+  --search-color: light-dark(
+    oklch(from #{$tertiary} l c h),
+    oklch(from #{$tertiary} calc(l * 1.5) calc(c * 0.25) h)
+  ) !important;
 
-  // Shadows (warm-tinted)
-  --fullstack-shadow-sm: #{dark-light-choose(
-      0 1px 2px rgb(44, 40, 36, 0.04),
-      0 1px 2px rgb(0, 0, 0, 0.2)
-    )};
-  --fullstack-shadow-md: #{dark-light-choose(
-      0 4px 12px rgb(44, 40, 36, 0.08),
-      0 4px 12px rgb(0, 0, 0, 0.3)
-    )};
-  --fullstack-shadow-lg: #{dark-light-choose(
-      0 8px 24px rgb(44, 40, 36, 0.12),
-      0 8px 24px rgb(0, 0, 0, 0.4)
-    )};
+  // Button Colors
+  --button-box-shadow: light-dark(
+    oklch(from #{$tertiary} calc(l * 1.5) calc(c * 0.35) h),
+    oklch(from #{$tertiary} calc(l * 0.75) calc(c * 0.5) h)
+  ) !important;
+  --d-sidebar-highlight-hover-icon: var(--d-sidebar-link-color) !important;
+  --d-sidebar-highlight-hover-background: var(--d-selected) !important;
+  --d-sidebar-link-icon-color: var(--d-sidebar-link-color) !important;
+  --d-sidebar-header-color: var(--d-sidebar-link-color) !important;
+  --d-sidebar-header-icon-color: var(--d-sidebar-link-color) !important;
+  --d-sidebar-active-suffix-color: var(--d-sidebar-suffix-color) !important;
+  --d-sidebar-background: var(--background-color) !important;
+  --d-sidebar-footer-fade: var(--background-color) !important;
+  --d-sidebar-prefix-background: var(--d-selected) !important;
+  --d-sidebar-active-prefix-background: light-dark(
+    oklch(from var(--d-selected) calc(l * 0.85) c h),
+    oklch(from var(--d-selected) calc(l * 0.7) c h)
+  ) !important;
+  --d-sidebar-highlight-prefix-background: light-dark(
+    oklch(from var(--d-selected) calc(l * 0.85) c h),
+    oklch(from var(--d-selected) calc(l * 0.7) c h)
+  ) !important;
+  --d-sidebar-highlight-suffix-color: var(
+    --d-sidebar-active-suffix-color
+  ) !important;
+  --d-sidebar-highlight-color: var(--primary) !important;
+  --d-sidebar-highlight-background: var(--d-selected) !important;
+  --d-sidebar-section-link-icon-size: 1em !important;
+  --d-hover: oklch(from var(--d-selected) l c h / 0.75) !important;
+  --d-input-bg-color: var(--d-content-background) !important;
+  --discourse_id-text: var(--accent-text-color) !important;
+  --discourse_id-text-hover: var(--accent-text-color) !important;
+  --discourse_id-icon: var(--accent-text-color) !important;
+  --discourse_id-icon-hover: var(--accent-text-color) !important;
+  --discourse_id-border: var(--discourse_id-background) !important;
+
+  // FullStack brand extensions
+  --fullstack-burnt-orange: #{$tertiary};
+  --fullstack-burnt-orange-dark: light-dark(
+    oklch(from #{$tertiary} calc(l * 0.8) c h),
+    oklch(from #{$tertiary} calc(l * 1.15) c h)
+  ) !important;
+  --fullstack-burnt-orange-light: light-dark(
+    oklch(from #{$tertiary} 92% calc(c * 0.25) h),
+    oklch(from #{$tertiary} 25% calc(c * 0.15) h)
+  ) !important;
+  --fullstack-cream-100: var(--background-color) !important;
+  --fullstack-cream-200: light-dark(
+    oklch(from #{$tertiary} 91% calc(c * 0.1) h),
+    oklch(from #{$tertiary} 18% calc(c * 0.04) h)
+  ) !important;
+  --fullstack-cream-300: light-dark(
+    oklch(from #{$tertiary} 88% calc(c * 0.08) h),
+    oklch(from #{$tertiary} 22% calc(c * 0.04) h)
+  ) !important;
+  --fullstack-charcoal-900: var(--primary) !important;
+  --fullstack-charcoal-700: light-dark(
+    oklch(from #{$primary} calc(l + 0.08) c h),
+    oklch(from #{$primary} calc(l - 0.08) c h)
+  ) !important;
+  --fullstack-charcoal-500: light-dark(
+    oklch(from #{$tertiary} 45% calc(c * 0.1) h),
+    oklch(from #{$tertiary} 60% calc(c * 0.1) h)
+  ) !important;
+  --fullstack-sage: light-dark(
+    oklch(50% 0.08 140deg),
+    oklch(60% 0.08 140deg)
+  ) !important;
+  --fullstack-border: light-dark(
+    oklch(from #{$tertiary} 88% calc(c * 0.08) h),
+    oklch(from #{$tertiary} 25% calc(c * 0.05) h)
+  ) !important;
+  --fullstack-shadow-sm: light-dark(
+    0 1px 2px oklch(from #{$primary} l c h / 0.04),
+    0 1px 2px oklch(0% 0 0deg / 0.2)
+  ) !important;
+  --fullstack-shadow-md: light-dark(
+    0 4px 12px oklch(from #{$primary} l c h / 0.08),
+    0 4px 12px oklch(0% 0 0deg / 0.3)
+  ) !important;
+  --fullstack-shadow-lg: light-dark(
+    0 8px 24px oklch(from #{$primary} l c h / 0.12),
+    0 8px 24px oklch(0% 0 0deg / 0.4)
+  ) !important;
 
   // Typography
-  --font-family: "Inter", system-ui, sans-serif;
-  --heading-font-family: "Manrope", system-ui, sans-serif;
-  --d-font-family--monospace: "JetBrains Mono", monospace;
+  --font-family: "Inter", system-ui, sans-serif !important;
+  --heading-font-family: "Manrope", system-ui, sans-serif !important;
+  --d-font-family--monospace: "JetBrains Mono", monospace !important;
+}
+
+.uc-modernize-foundation-theme {
+  --d-sidebar-active-background: var(--d-selected) !important;
 }
