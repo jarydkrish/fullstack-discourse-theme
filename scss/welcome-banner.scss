@@ -96,7 +96,7 @@
   &__title {
     text-align: left;
     margin: 0;
-    color: var(--search-color);
+    color: var(--fullstack-banner-title-color);
 
     .--location-above-topic-content & {
       @container (width >= 800px) {
