@@ -11,6 +11,5 @@
 RSpec.describe "Core features" do
   before { upload_theme_or_component }
 
-  it_behaves_like "having working core features",
-                  skip_examples: %i[search:quick_search]
+  it_behaves_like "having working core features", skip_examples: %i[search:quick_search]
 end
