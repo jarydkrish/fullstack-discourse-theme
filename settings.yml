@@ -1,2 +1,4 @@
-example_setting:
+fullstack_branding:
   default: true
+  type: bool
+  description: "Enable FullStack branded styling (custom fonts, colors, and layout adjustments)"

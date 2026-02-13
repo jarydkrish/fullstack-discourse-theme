@@ -1,0 +1,98 @@
+// FullStack Topic List
+
+// Topic list table
+.topic-list {
+  .topic-list-item {
+    transition: background $transition-fast;
+
+    &:hover {
+      background: var(--fullstack-cream-200);
+    }
+  }
+
+  // Topic title links
+  .main-link {
+    a.title {
+      font-weight: 600;
+      color: var(--fullstack-charcoal-900);
+
+      &:hover {
+        color: var(--fullstack-burnt-orange);
+      }
+
+      &:visited {
+        color: var(--fullstack-charcoal-500);
+      }
+    }
+  }
+
+  // Topic excerpt
+  .topic-excerpt {
+    color: var(--fullstack-charcoal-500);
+    line-height: 1.5;
+  }
+}
+
+// Tags in topic list
+.discourse-tag {
+  border-radius: $radius-full;
+  padding: 0.15em 0.6em;
+  font-size: 0.8em;
+  font-weight: 500;
+  background: var(--fullstack-cream-200);
+  border: 1px solid var(--fullstack-border);
+  color: var(--fullstack-charcoal-700);
+
+  &:hover {
+    background: var(--fullstack-cream-300);
+    color: var(--fullstack-charcoal-900);
+  }
+}
+
+// Category boxes / grid on categories page
+.category-list {
+  .category {
+    border-radius: $radius-lg;
+    border: 1px solid var(--fullstack-border);
+    box-shadow: var(--fullstack-shadow-sm);
+    transition: all $transition-base;
+
+    &:hover {
+      box-shadow: var(--fullstack-shadow-md);
+      transform: translateY(-1px);
+    }
+  }
+}
+
+// Category box view
+.category-boxes {
+  .category-box {
+    border-radius: $radius-lg;
+    border: 1px solid var(--fullstack-border);
+    box-shadow: var(--fullstack-shadow-sm);
+    overflow: hidden;
+    transition: all $transition-base;
+
+    &:hover {
+      box-shadow: var(--fullstack-shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .category-box-heading {
+      font-family: var(--heading-font-family);
+      font-weight: 700;
+    }
+  }
+}
+
+// Category badge (colored dot + name)
+.badge-category__wrapper {
+  font-weight: 500;
+}
+
+// Featured topic list
+.latest-topic-list {
+  .latest-topic-list-item {
+    border-bottom: 1px solid var(--fullstack-border);
+  }
+}

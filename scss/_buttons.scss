@@ -1,0 +1,88 @@
+// FullStack Buttons
+.btn {
+  border-radius: $radius-md;
+  font-family: var(--font-family);
+  font-weight: 500;
+  transition: all $transition-base;
+
+  .d-icon {
+    transition: color $transition-fast;
+  }
+}
+
+// Primary button (burnt-orange)
+.btn-primary {
+  background: var(--fullstack-burnt-orange);
+  color: #fff;
+  box-shadow: var(--fullstack-shadow-sm);
+  border: none;
+
+  &:hover,
+  &:focus {
+    background: var(--fullstack-burnt-orange-dark);
+    box-shadow: var(--fullstack-shadow-md);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: var(--fullstack-shadow-sm);
+  }
+
+  .d-icon {
+    color: #fff;
+  }
+}
+
+// Default button
+.btn-default {
+  background: var(--fullstack-cream-100);
+  border: 1px solid var(--fullstack-border);
+
+  &:hover,
+  &:focus {
+    background: var(--fullstack-cream-200);
+    border-color: var(--fullstack-border-strong);
+  }
+}
+
+// Danger button
+.btn-danger {
+  &:hover {
+    box-shadow: var(--fullstack-shadow-md);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Flat / icon-only buttons
+.btn-flat {
+  border-radius: $radius-md;
+
+  &:hover {
+    background: var(--fullstack-cream-200);
+  }
+
+  .d-icon {
+    color: var(--fullstack-charcoal-500);
+  }
+
+  &:hover .d-icon {
+    color: var(--fullstack-charcoal-700);
+  }
+}
+
+// Small / mini buttons
+.btn-small,
+.btn-mini {
+  border-radius: $radius-sm;
+}
+
+// Create topic button (in sidebar or header)
+#create-topic {
+  border-radius: $radius-md;
+  font-weight: 600;
+}

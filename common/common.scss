@@ -1,1 +1,19 @@
-// Theme's SCSS
+// FullStack Discourse Theme
+// Branded theme for the FullStack Ag community
+
+@import "../scss/fonts";
+@import "../scss/variables";
+@import "../scss/utilities";
+@import "../scss/base";
+@import "../scss/header";
+@import "../scss/buttons";
+@import "../scss/navigation";
+@import "../scss/sidebar";
+@import "../scss/topic-list";
+@import "../scss/topic";
+@import "../scss/forms";
+@import "../scss/composer";
+@import "../scss/cards";
+@import "../scss/badges";
+@import "../scss/user-profile";
+@import "../scss/modals";

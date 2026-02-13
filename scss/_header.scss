@@ -1,0 +1,66 @@
+// FullStack Header
+.d-header-wrap {
+  box-shadow: var(--fullstack-shadow-sm);
+}
+
+.d-header {
+  border-bottom: 1px solid var(--fullstack-border);
+
+  .title a {
+    font-weight: 700;
+  }
+
+  .d-header-icons {
+    .icon {
+      border-radius: $radius-md;
+
+      &:hover {
+        background: var(--fullstack-cream-200);
+      }
+
+      .d-icon {
+        color: var(--fullstack-charcoal-700);
+      }
+    }
+
+    .unread-notifications {
+      background: var(--fullstack-burnt-orange);
+    }
+  }
+}
+
+// Header dropdown panels (notifications, user menu, hamburger)
+.menu-panel {
+  border: 1px solid var(--fullstack-border);
+  border-radius: $radius-lg;
+  box-shadow: var(--fullstack-shadow-lg);
+
+  .panel-body {
+    border-radius: $radius-lg;
+  }
+}
+
+// Search dropdown
+.search-menu {
+  border-radius: $radius-lg;
+  border: 1px solid var(--fullstack-border);
+  box-shadow: var(--fullstack-shadow-lg);
+
+  .search-input {
+    border-bottom: 1px solid var(--fullstack-border);
+
+    input {
+      font-family: var(--font-family);
+    }
+  }
+
+  .results {
+    .item {
+      border-radius: $radius-md;
+
+      &:hover {
+        background: var(--fullstack-cream-200);
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+// FullStack Forms
+
+// All text inputs
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="date"],
+textarea,
+.select-kit .select-kit-header {
+  border-radius: $radius-md;
+  border: 1px solid var(--fullstack-border);
+  font-family: var(--font-family);
+  transition:
+    border-color $transition-fast,
+    box-shadow $transition-fast;
+
+  &:focus {
+    @extend %focus-ring;
+  }
+}
+
+// Select dropdowns
+select {
+  border-radius: $radius-md;
+  border: 1px solid var(--fullstack-border);
+  font-family: var(--font-family);
+
+  &:focus {
+    @extend %focus-ring;
+  }
+}
+
+// Select-kit (Discourse's custom select)
+.select-kit {
+  .select-kit-header {
+    &.is-focused,
+    &:focus {
+      @extend %focus-ring;
+    }
+  }
+
+  .select-kit-body {
+    border-radius: $radius-md;
+    border: 1px solid var(--fullstack-border);
+    box-shadow: var(--fullstack-shadow-lg);
+    overflow: hidden;
+  }
+
+  .select-kit-row {
+    border-radius: 0;
+
+    &:hover,
+    &.is-highlighted {
+      background: var(--fullstack-cream-200);
+    }
+
+    &.is-selected {
+      background: var(--fullstack-burnt-orange-light);
+      color: var(--fullstack-burnt-orange);
+    }
+  }
+}
+
+// Checkbox and radio styling
+.d-toggle-switch {
+  .d-toggle-switch__checkbox-slider {
+    border-radius: $radius-full;
+
+    &.--is-checked {
+      background: var(--fullstack-burnt-orange);
+    }
+  }
+}

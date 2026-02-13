@@ -1,0 +1,77 @@
+// FullStack Modals
+
+// Modal backdrop
+.modal-backdrop {
+  background: rgb(45, 39, 37, 0.5);
+}
+
+// Modal container
+.modal .modal-inner-container,
+.d-modal .d-modal__container {
+  border-radius: $radius-lg;
+  border: 1px solid var(--fullstack-border);
+  box-shadow: var(--fullstack-shadow-lg);
+  overflow: hidden;
+}
+
+// Modal header
+.d-modal .d-modal__header {
+  border-bottom: 1px solid var(--fullstack-border);
+
+  .d-modal__title-text {
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+  }
+}
+
+// Modal footer
+.d-modal .d-modal__footer {
+  border-top: 1px solid var(--fullstack-border);
+}
+
+// Login modal
+.login-modal {
+  .d-modal__container {
+    border-radius: $radius-lg;
+  }
+
+  .login-title {
+    font-family: var(--heading-font-family);
+    font-weight: 700;
+  }
+}
+
+// Share modal / topic share
+.share-topic-modal {
+  .d-modal__container {
+    border-radius: $radius-lg;
+  }
+}
+
+// Lightbox
+.mfp-wrap {
+  .mfp-content {
+    .mfp-figure {
+      figure {
+        border-radius: $radius-lg;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+// Dialog (confirmation dialogs)
+.dialog-container {
+  .dialog-content {
+    border-radius: $radius-lg;
+    border: 1px solid var(--fullstack-border);
+    box-shadow: var(--fullstack-shadow-lg);
+
+    .dialog-header {
+      .dialog-title {
+        font-family: var(--heading-font-family);
+        font-weight: 700;
+      }
+    }
+  }
+}

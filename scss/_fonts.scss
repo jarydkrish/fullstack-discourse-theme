@@ -1,0 +1,69 @@
+// FullStack Font Faces
+// Self-hosted WOFF2 files from Google Fonts, served via Discourse CDN
+
+// Inter - Body/UI font
+@font-face {
+  font-family: Inter;
+  src: url($inter-regular) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url($inter-medium) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url($inter-semibold) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Manrope - Heading font
+@font-face {
+  font-family: Manrope;
+  src: url($manrope-semibold) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url($manrope-bold) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url($manrope-extrabold) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+// JetBrains Mono - Code font
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url($jetbrains-mono-regular) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url($jetbrains-mono-medium) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

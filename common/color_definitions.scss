@@ -1,0 +1,49 @@
+// FullStack Color Definitions
+// Custom CSS properties that auto-adapt to light/dark mode via dark-light-choose()
+:root {
+  // Brand colors
+  --fullstack-burnt-orange: #{dark-light-choose(#d4622b, #e07d4a)};
+  --fullstack-burnt-orange-dark: #{dark-light-choose(#b8531f, #d4622b)};
+  --fullstack-burnt-orange-light: #{dark-light-choose(#f0ddd0, #5a3a1e)};
+
+  // Cream palette
+  --fullstack-cream-100: #{dark-light-choose(#f2ecde, #2d2725)};
+  --fullstack-cream-200: #{dark-light-choose(#ede8dc, #332f2c)};
+  --fullstack-cream-300: #{dark-light-choose(#e5dfd3, #3a3533)};
+
+  // Charcoal palette
+  --fullstack-charcoal-900: #{dark-light-choose(#2d2725, #f2ecde)};
+  --fullstack-charcoal-700: #{dark-light-choose(#3d3935, #ddd7c9)};
+  --fullstack-charcoal-500: #{dark-light-choose(#6b6460, #a39d95)};
+  --fullstack-charcoal-300: #{dark-light-choose(#9e9790, #6b6460)};
+
+  // Sage / green
+  --fullstack-sage: #{dark-light-choose(#5f7e3f, #7a9e5a)};
+  --fullstack-sage-light: #{dark-light-choose(#e8eddf, #3a4530)};
+
+  // Chocolate
+  --fullstack-chocolate: #{dark-light-choose(#3d2e1e, #e8ddd0)};
+
+  // Borders
+  --fullstack-border: #{dark-light-choose(#e5dfd3, #3a3533)};
+  --fullstack-border-strong: #{dark-light-choose(#d5cfc3, #4a4543)};
+
+  // Shadows (warm-tinted)
+  --fullstack-shadow-sm: #{dark-light-choose(
+      0 1px 2px rgb(44, 40, 36, 0.04),
+      0 1px 2px rgb(0, 0, 0, 0.2)
+    )};
+  --fullstack-shadow-md: #{dark-light-choose(
+      0 4px 12px rgb(44, 40, 36, 0.08),
+      0 4px 12px rgb(0, 0, 0, 0.3)
+    )};
+  --fullstack-shadow-lg: #{dark-light-choose(
+      0 8px 24px rgb(44, 40, 36, 0.12),
+      0 8px 24px rgb(0, 0, 0, 0.4)
+    )};
+
+  // Typography
+  --font-family: "Inter", system-ui, sans-serif;
+  --heading-font-family: "Manrope", system-ui, sans-serif;
+  --d-font-family--monospace: "JetBrains Mono", monospace;
+}

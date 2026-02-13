@@ -1,0 +1,69 @@
+// FullStack Composer
+
+// Reply/compose panel
+#reply-control {
+  border-radius: $radius-lg $radius-lg 0 0;
+  border-top: 1px solid var(--fullstack-border);
+  box-shadow: var(--fullstack-shadow-lg);
+
+  .reply-area {
+    .d-editor-textarea-wrapper {
+      border: 1px solid var(--fullstack-border);
+      border-radius: $radius-md;
+      transition:
+        border-color $transition-fast,
+        box-shadow $transition-fast;
+
+      &:focus-within {
+        border-color: var(--fullstack-burnt-orange);
+        box-shadow: 0 0 0 3px rgb(212, 98, 43, 0.15);
+      }
+    }
+
+    textarea.d-editor-input {
+      font-family: var(--font-family);
+    }
+  }
+
+  // Toolbar buttons
+  .d-editor-button-bar {
+    .btn {
+      border-radius: $radius-sm;
+    }
+  }
+
+  // Composer title input
+  #reply-title {
+    border-radius: $radius-md;
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+  }
+
+  // Category/tag choosers in composer
+  .category-chooser,
+  .mini-tag-chooser {
+    .select-kit-header {
+      border-radius: $radius-md;
+    }
+  }
+}
+
+// Composer popup (save draft, etc.)
+.composer-popup {
+  border-radius: $radius-md;
+  border: 1px solid var(--fullstack-border);
+  box-shadow: var(--fullstack-shadow-md);
+}
+
+// Emoji picker
+.emoji-picker {
+  border-radius: $radius-lg;
+  border: 1px solid var(--fullstack-border);
+  box-shadow: var(--fullstack-shadow-lg);
+
+  .emoji-picker-category-buttons {
+    .btn {
+      border-radius: $radius-sm;
+    }
+  }
+}

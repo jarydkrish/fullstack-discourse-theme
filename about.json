@@ -1,13 +1,47 @@
 {
   "name": "FullStack",
   "authors": "FullStack Ag Team",
-  "about_url": "TODO: Put your theme's public repo or Meta topic URL here",
-  "license_url": "TODO: Put your theme's LICENSE URL here",
-  "learn_more": "TODO",
-  "theme_version": "0.0.1",
+  "about_url": "https://github.com/NerdOutInc/fullstack-discourse-theme",
+  "license_url": "https://github.com/NerdOutInc/fullstack-discourse-theme/blob/main/LICENSE",
+  "learn_more": "https://fullstack.ag",
+  "theme_version": "1.0.0",
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
-  "assets": {},
+  "assets": {
+    "inter-regular": "assets/Inter-Regular.woff2",
+    "inter-medium": "assets/Inter-Medium.woff2",
+    "inter-semibold": "assets/Inter-SemiBold.woff2",
+    "manrope-semibold": "assets/Manrope-SemiBold.woff2",
+    "manrope-bold": "assets/Manrope-Bold.woff2",
+    "manrope-extrabold": "assets/Manrope-ExtraBold.woff2",
+    "jetbrains-mono-regular": "assets/JetBrainsMono-Regular.woff2",
+    "jetbrains-mono-medium": "assets/JetBrainsMono-Medium.woff2"
+  },
   "modifiers": {},
-  "color_schemes": {}
+  "color_schemes": {
+    "FullStack Light": {
+      "primary": "2d2725",
+      "secondary": "f2ecde",
+      "tertiary": "d4622b",
+      "quaternary": "5f7e3f",
+      "header_background": "f2ecde",
+      "header_primary": "2d2725",
+      "highlight": "f0ddd0",
+      "danger": "b74136",
+      "success": "5f7e3f",
+      "love": "d4622b"
+    },
+    "FullStack Dark": {
+      "primary": "f2ecde",
+      "secondary": "2d2725",
+      "tertiary": "e07d4a",
+      "quaternary": "7a9e5a",
+      "header_background": "1e1b19",
+      "header_primary": "f2ecde",
+      "highlight": "5a3a1e",
+      "danger": "d05454",
+      "success": "7a9e5a",
+      "love": "e07d4a"
+    }
+  }
 }

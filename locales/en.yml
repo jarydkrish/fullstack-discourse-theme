@@ -1,5 +1,5 @@
 en:
   theme_metadata:
-    description: The default theme for FullStack Ag
+    description: The branded theme for the FullStack Ag community — warm, agricultural-inspired design with cream backgrounds, charcoal text, and burnt-orange accents.
     settings:
-      example_setting: A description of a setting.
+      fullstack_branding: Enable or disable FullStack branded styling (custom fonts, colors, and layout adjustments)
