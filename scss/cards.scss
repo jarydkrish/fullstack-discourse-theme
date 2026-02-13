@@ -2,8 +2,11 @@
 .user-card,
 #user-card {
   border-radius: 16px;
-  border: 1px solid var(--fullstack-border);
-  box-shadow: var(--fullstack-shadow-lg);
+
+  &:has(.card-content) {
+    border: 1px solid var(--fullstack-border);
+    box-shadow: var(--fullstack-shadow-lg);
+  }
 
   .card-content {
     font-family: var(--font-family);
@@ -27,8 +30,11 @@
 .group-card,
 #group-card {
   border-radius: 16px;
-  border: 1px solid var(--fullstack-border);
-  box-shadow: var(--fullstack-shadow-lg);
+
+  &:has(.card-content) {
+    border: 1px solid var(--fullstack-border);
+    box-shadow: var(--fullstack-shadow-lg);
+  }
 
   .group-card-name {
     font-family: var(--heading-font-family);
