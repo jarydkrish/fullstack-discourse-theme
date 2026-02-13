@@ -36,15 +36,15 @@
   "color_schemes": {
     "FullStack Light": {
       "primary": "2d2725",
-      "secondary": "f2ecde",
+      "secondary": "ffffff",
       "tertiary": "d4622b",
       "tertiary-med-or-tertiary": "d4622b",
       "quaternary": "5f7e3f",
-      "header_background": "f2ecde",
+      "header_background": "ffffff",
       "header_primary": "2d2725",
-      "highlight": "f0ddd0",
-      "selected": "f0ddd0",
-      "hover": "ede8dc",
+      "highlight": "fce8db",
+      "selected": "fce8db",
+      "hover": "fff5ef",
       "danger": "b74136",
       "success": "5f7e3f",
       "love": "d4622b"
@@ -52,17 +52,17 @@
     "FullStack Dark": {
       "primary": "f2ecde",
       "secondary": "2d2725",
-      "tertiary": "e07d4a",
-      "tertiary-med-or-tertiary": "e07d4a",
+      "tertiary": "d4622b",
+      "tertiary-med-or-tertiary": "d4622b",
       "quaternary": "7a9e5a",
       "header_background": "1e1b19",
       "header_primary": "f2ecde",
-      "highlight": "5a3a1e",
-      "selected": "3a3020",
-      "hover": "332f2c",
+      "highlight": "5a301a",
+      "selected": "3a2a1c",
+      "hover": "332d2a",
       "danger": "d05454",
       "success": "7a9e5a",
-      "love": "e07d4a"
+      "love": "d4622b"
     }
   },
   "theme_site_settings": {
